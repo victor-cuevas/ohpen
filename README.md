@@ -5,6 +5,18 @@
 Worked on the test for a bit over the 5 hour mark set. Overall time spent ~6:30 hours - just to be completely transparent about it.
 Worked on some unit tests and e2e tests just to give a short presentation about my knowledge of it.
 
+### TEST DATA
+Data combinations to test in the app: (or add any pair of name and role in the `auth.service.ts`)
+```
+user    |  user group
+------------------------- 
+admin   |  administrator
+victor  |  rrhh
+```
+
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
