@@ -2,7 +2,7 @@
 
 ## Summary
 
-Worked on the test for a bit over the 5 hour mark set. Overall time spent ~6:30 hours - just to be completely transparent about it.
+Worked on the assignment for a bit over the 5 hour mark. Overall time spent ~6:30 hours - just to be completely transparent about it.
 Worked on some unit tests and e2e tests just to give a short presentation about my knowledge of it.
 
 ## Development server
