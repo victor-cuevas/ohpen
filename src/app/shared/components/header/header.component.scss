@@ -1,0 +1,50 @@
+.mat-toolbar {
+  height: 84px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 7px -1px rgba(0, 0, 0, 0.25);
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  height: 100%;
+}
+
+a:hover:not(.disabled), a:active:not(.disabled), .router-link-active {
+  font-weight: 700;
+}
+
+a.disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+.navigation-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#logo-img {
+  height: 71px;
+}
+#logo-img:hover {
+  opacity: 0.6;
+}
+
+@media(max-width: 959px) {
+  mat-toolbar {
+    border-radius: 0px;
+  }
+}
+
+button {
+  margin-left: 50px;
+  width: 130px;
+  height: 44px;
+  background: #DCE0DB;
+}

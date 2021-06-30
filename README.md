@@ -1,18 +1,13 @@
-# Ohpen
+# Ohpen by Víctor Cuevas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.13.
+## Summary
+
+Worked on the test for a bit over the 5 hour mark set. Overall time spent ~6:30 hours - just to be completely transparent about it.
+Worked on some unit tests and e2e tests just to give a short presentation about my knowledge of it.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
@@ -22,6 +17,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+(Remember to stop ng serve if app is running to avoid haing port conflicts)
+## Build
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.

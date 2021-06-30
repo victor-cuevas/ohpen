@@ -1,33 +1,34 @@
 import { Injectable } from '@angular/core';
-import {Subject} from 'rxjs';
+import { User } from '../models/User.model';
+import { Role } from '../models/Role.enum';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  private users = [
+  private users: User[] = [
     {
       name: 'admin',
-      user_group: 'administrator',
+      role: Role.admin,
     },
     {
       name: 'victor',
-      user_group: 'rrhh'
+      role: Role.rrhh
   }];
 
   constructor() {}
 
-  checkAuth(auth): boolean {
-    return !!this.users.filter(item => item.name === auth.name && auth.role === item.user_group).length;
+  checkAuth(auth: User): boolean {
+    return !!this.users.filter(item => item.name === auth.name && auth.role === item.role).length;
   }
 
   isAuthorized(): boolean {
     const auth = this.getAuth();
 
-    return !!auth;
+    return !!auth && !!auth.name;
   }
 
-  getAuth(): any {
+  getAuth(): User {
     return JSON.parse(localStorage.getItem('auth'));
   }
 
@@ -35,7 +36,7 @@ export class AuthService {
     this.removeAuthFromLocalStorage();
   }
 
-  login(auth): void {
+  login(auth: User): void {
     localStorage.setItem('auth', JSON.stringify(auth));
   }
 

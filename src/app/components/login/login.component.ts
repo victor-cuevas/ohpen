@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService} from '../services/auth.service';
+import {AuthService} from '../../shared/services/auth.service';
 import {Router} from '@angular/router';
+import {User} from '../../shared/models/User.model';
 
 @Component({
   selector: 'app-login',
@@ -9,9 +10,9 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   roles = ['administrator', 'rrhh'];
-  model = {
+  model: User = {
     name: '',
-    role: ''
+    role: null
   };
 
   constructor(private authService: AuthService, private router: Router) { }
@@ -24,7 +25,7 @@ export class LoginComponent implements OnInit {
       this.authService.login(this.model);
       this.router.navigate([`/`]);
     } else {
-      alert('user not found');
+      alert('User/role combination doesn\'t exist');
     }
   }
 }

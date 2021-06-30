@@ -1,0 +1,20 @@
+<div class="row"  fxLayout="row wrap" fxLayoutAlign="flex-start">
+  <div class="card-container" fxFlex="33.3%" *ngFor="let subscription of subscriptions">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ subscription.title }}</mat-card-title>
+        <mat-slide-toggle [(ngModel)]="subscription.status" name="status"></mat-slide-toggle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ subscription.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+
+<div class="subscription-viewer mt-s">
+  <ng-container *ngFor="let sub of subscriptions">
+    <div *ngIf="sub.status">{{ sub.title }}</div>
+  </ng-container>
+</div>

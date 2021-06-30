@@ -1,0 +1,58 @@
+.mat-card {
+  border-radius: 0 !important;
+  margin-top: 32px;
+}
+
+::ng-deep .mat-slide-toggle {
+  position: absolute;
+  right: 15px;
+}
+
+::ng-deep .mat-card-header-text {
+  margin: 0!important;
+  color: #9B9B9B;
+
+}
+
+::ng-deep .mat-slide-toggle-bar {
+  width: 30px !important;
+  height: 20px !important;
+  background: #CCCCCC !important;
+  border-radius: 20px !important;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {
+  transform: translate3d(11px, 0, 0) !important;
+}
+::ng-deep .mat-slide-toggle-thumb-container {
+   width: 15px !important;
+   height: 15px !important;
+   top: 3px !important;
+   left: 2px !important;
+ }
+
+::ng-deep .mat-slide-toggle-thumb {
+  height: 15px !important;
+  width: 15px !important;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background: #FFFFFF !important;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: #6B8D73 !important;
+}
+
+.subscription-viewer {
+  background: #FFFFFF;
+  min-height: 162px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 26px 24px;
+}
+
+.card-container {
+  padding: 0 15px;
+}

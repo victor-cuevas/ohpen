@@ -29,7 +29,11 @@ $ohpen-theme: mat-light-theme($ohpen-primary, $ohpen-accent, $ohpen-warn);
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Roboto, "Helvetica Neue", sans-serif; !important;' }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #EDEFF1
+}
 
 label {
   font-family: Roboto;
@@ -42,11 +46,11 @@ label {
 }
 
 .mt-s {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
 .mb-s {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .pr-0 {

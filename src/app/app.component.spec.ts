@@ -20,16 +20,17 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ohpen'`, () => {
+  it(`should have isLoggedIn property false`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ohpen');
+    expect(app.isLoggedIn()).toEqual(false);
   });
 
-  it('should render title', () => {
+  it(`should have isLoggedIn property true`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ohpen app is running!');
+    const app = fixture.componentInstance;
+    localStorage.setItem('auth', JSON.stringify({ test: 'test' }));
+    expect(app.isLoggedIn()).toEqual(true);
+    localStorage.removeItem('auth');
   });
 });
